@@ -1,0 +1,109 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(52, 50, 50);
+    width: 100vw;
+    height: 100vh;
+}
+
+.td1 {
+    border: 4px solid black;
+    width: 120px;
+    height: 120px;
+    text-align: center;
+    vertical-align: middle;
+    border-radius: 10px;
+    font-size: 60px;
+    position: relative;
+    cursor: pointer;
+    color: white;
+    background-color: white;
+}
+.reset{
+    border: 4px solid black;
+    width: 120px;
+    height: 60px;
+    text-align: center;
+    vertical-align: middle;
+    border-radius: 10px;
+    font-size: 30px;
+    position: relative;
+    cursor: pointer;
+    color: rgb(0, 0, 0);
+    background-color: lightslategray;
+    font-weight: bold;
+    transition: all .3s;
+
+}
+.reset:hover{
+    background-color: rgb(193, 198, 203);
+    transform: translateY(-3px);
+
+}
+.logo{
+    border: 4px solid black;
+    width: 120px;
+    height: 60px;
+    text-align: center;
+    vertical-align: middle;
+    border-radius: 10px;
+    font-size: 30px;
+    position: relative;
+    cursor: pointer;
+    color: rgb(234, 0, 0);
+    background-color: rgb(241, 227, 227);
+    font-weight: bold;
+
+}
+span{
+    color: blue;
+    font-weight: bold;
+}
+
+
+
+.schedule {
+    border: 4px solid black;
+    width: 120px;
+    height: 60px;
+    text-align: center;
+    vertical-align: middle;
+    border-radius: 10px;
+    font-size: 30px;
+    position: relative;
+    background-color: lightslategray;
+    color: white;
+    
+}
+
+.playGround{
+    position: absolute;
+    z-index: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 400px;
+    height: auto;
+    background-color: transparent;
+}
+button{
+    width: 160px;
+    height: 60px;
+    border-radius: 20px;
+    background-color: orange;
+    border: none;
+    font-size: 30px;
+    transition: all .3s;
+    position: relative;
+    cursor: pointer;
+}
+button:hover{
+    transform: scale(1.1);
+    background-color: rgb(253, 203, 110);
+}
+.container{
+    z-index: -1;
+    position: absolute;
+    visibility: hidden;
+}

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="playGround" id="playGround">
+        <button id="btn1" onclick="btn1Func()">1 vs 1</button>
+        
+    </div>
+    <div class="container" id="container">
+        <table>
+            <tr>
+                <td class="logo"> <span>X</span>O</td>
+                <td class="empty"></td>
+                <td class="reset" onclick="resetFunc()">RESET</td>
+            </tr>
+            <tr>
+                <td class="td1"  id="cell-0-0" onclick="clicked1(); checkWin(); vsCpu()"></td>
+                <td class="td1"  id="cell-0-1" onclick="clicked2(); checkWin(); vsCpu()"></td>
+                <td class="td1"  id="cell-0-2" onclick="clicked3(); checkWin(); vsCpu()"></td>
+
+            </tr>
+            <tr>
+                <td class="td1"  id="cell-1-0" onclick="clicked4(); checkWin(); vsCpu()"></td>
+                <td class="td1"  id="cell-1-1" onclick="clicked5(); checkWin(); vsCpu()"></td>
+                <td class="td1"  id="cell-1-2" onclick="clicked6(); checkWin(); vsCpu()"></td>
+            </tr>
+            <tr>
+                <td class="td1"  id="cell-2-0" onclick="clicked7(); checkWin(); vsCpu()"></td>
+                <td class="td1"  id="cell-2-1" onclick="clicked8(); checkWin(); vsCpu()"></td>
+                <td class="td1"  id="cell-2-2" onclick="clicked9(); checkWin(); vsCpu()"></td>
+            </tr>
+
+        </table>
+
+
+        <table class="table2">
+            <tr>
+                <td class="schedule" id="cell-3-0" >X </td>
+                <td class="schedule" id="cell-3-1" >draw</td>
+                <td class="schedule" id="cell-3-2" >O</td>
+
+                </tr>
+        </table >
+
+        
+    </div>
+
+
+    <script src="main.js"></script>
+</body>
+
+</html>
